@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5hx-q4-Tez">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Sudoku SAT-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SudokuViewController" customModule="Sudoku4x4_SATSolver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sza-15-BFq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="415"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="9Bk-XK-5r0">
+                                    <size key="itemSize" width="275" height="198"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="GDl-nh-rHb" customClass="SubgridSudokuCollectionViewCell" customModule="Sudoku4x4_SATSolver" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="66" width="275" height="198"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="275" height="198"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cfa-Pa-syN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="275" height="198"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="gNU-XC-Z9f">
+                                                        <size key="itemSize" width="131" height="103"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="1.5" minY="1.5" maxX="1.5" maxY="1.5"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="nIP-tf-b1P" customClass="CellSubgridCollectionViewCell" customModule="Sudoku4x4_SATSolver" customModuleProvider="target">
+                                                            <rect key="frame" x="1.5" y="1.5" width="131" height="103"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                                <rect key="frame" x="0.0" y="0.0" width="131" height="103"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZ7-eh-u9R">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="131" height="103"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="cZ7-eh-u9R" firstAttribute="top" secondItem="nIP-tf-b1P" secondAttribute="top" id="A85-sY-Vkb"/>
+                                                                <constraint firstAttribute="trailing" secondItem="cZ7-eh-u9R" secondAttribute="trailing" id="HrK-fB-hlg"/>
+                                                                <constraint firstAttribute="bottom" secondItem="cZ7-eh-u9R" secondAttribute="bottom" id="N63-vw-m7h"/>
+                                                                <constraint firstItem="cZ7-eh-u9R" firstAttribute="leading" secondItem="nIP-tf-b1P" secondAttribute="leading" id="QG6-nh-uvv"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="textField" destination="cZ7-eh-u9R" id="Oev-cs-RHE"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Cfa-Pa-syN" firstAttribute="top" secondItem="GDl-nh-rHb" secondAttribute="top" id="JNw-jj-uJI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cfa-Pa-syN" secondAttribute="trailing" id="XiX-e6-fYJ"/>
+                                            <constraint firstItem="Cfa-Pa-syN" firstAttribute="leading" secondItem="GDl-nh-rHb" secondAttribute="leading" id="q2Z-5d-9k5"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cfa-Pa-syN" secondAttribute="bottom" id="xAS-Am-sd9"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="collectionView" destination="Cfa-Pa-syN" id="6gq-Lg-6Ql"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fJh-jq-HK3">
+                                <rect key="frame" x="0.0" y="415" width="600" height="185"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="mEM-ds-RY7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fJh-jq-HK3" secondAttribute="trailing" id="3mt-e0-3a0"/>
+                            <constraint firstAttribute="trailing" secondItem="sza-15-BFq" secondAttribute="trailing" id="EjZ-yM-Nlp"/>
+                            <constraint firstItem="fJh-jq-HK3" firstAttribute="top" secondItem="sza-15-BFq" secondAttribute="bottom" id="Ib9-ay-244"/>
+                            <constraint firstItem="sza-15-BFq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MpC-Qo-xSE"/>
+                            <constraint firstItem="sza-15-BFq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TfY-tP-xJ8"/>
+                            <constraint firstItem="fJh-jq-HK3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hd8-H4-WQ7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fJh-jq-HK3" secondAttribute="bottom" id="zya-IQ-Jja"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sudoku SAT" id="PsB-Op-QkV">
+                        <barButtonItem key="leftBarButtonItem" title="Limpar" id="tXQ-GG-fdh">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="clear:" destination="BYZ-38-t0r" id="82X-JD-Flk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Verificar" id="dgC-Ps-BAg">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="verifyWithDPLL:" destination="BYZ-38-t0r" id="QLe-Z9-Pu8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="consoleLog" destination="fJh-jq-HK3" id="d9U-P9-Bbx"/>
+                        <outlet property="heightTextField" destination="mEM-ds-RY7" id="v76-Zg-PT9"/>
+                        <outlet property="sudokuCollection" destination="sza-15-BFq" id="Dsf-h4-fxl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="168"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8cT-MK-MJ8">
+            <objects>
+                <navigationController id="5hx-q4-Tez" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="smR-4S-pSA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.32623864850000001" green="0.59643763350000001" blue="0.2184161325" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Cak-Ww-qAq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLw-Zg-SZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-280" y="168"/>
+        </scene>
+    </scenes>
+</document>
