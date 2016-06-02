@@ -38,6 +38,6 @@ No caso acima, o DPLL receberá a formula na CNF (1 ∨ 2) ∧ (-1 ∨ 3) com v(
 
 A equipe é formada por três alunos (atualmente) do Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Campus Maracanaú. Sendo eles:
 
-[Diego Brito](http://lattes.cnpq.br/2238317369097882)
-[Diêgo Farias](http://lattes.cnpq.br/2171527148137210)
-[Nykolas Mayko](http://lattes.cnpq.br/7331320070132781)
+* [Diego Brito](http://lattes.cnpq.br/2238317369097882)
+* [Diêgo Farias](http://lattes.cnpq.br/2171527148137210)
+* [Nykolas Mayko](http://lattes.cnpq.br/7331320070132781)
