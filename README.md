@@ -1,6 +1,6 @@
 # Sudoku4x4 Solver - Swift
 
-*Demonstração do Funcinamento*
+**Demonstração do Funcinamento**
 
 ![alt tag](http://i.imgur.com/wFqTCra.gif)
 
@@ -10,7 +10,7 @@ Aplicativo desenvolvido para o trabalho final da disciplina de "Lógica para Ci�
 
 ## Descrição
 
-O projeto foi desenvolvido na IDE Xcode 7.3.1 com a linguagem Swift 2.2 utilizando o framework UIKit para a interface de usuário. O aplicativo tem como objetivo exemplificar um Sudoku 4x4, porém a classe *SudokuNxN.swift* gera restrições para Sudokus NxN.
+O projeto foi desenvolvido na IDE Xcode 7.3.1 com a linguagem Swift 2.2 utilizando o framework UIKit para a interface de usuário, portanto fica disponível exclusivamente para a plataforma iOS. O aplicativo tem como objetivo exemplificar um Sudoku 4x4, porém a classe **SudokuNxN.swift** gera restrições para Sudokus NxN.
 
 **Inicialização:**
 
@@ -22,7 +22,7 @@ let sudoku9x9 = Sudoku_NxN(level: 9)
 sudoku9x9.toString()                  // Mostra as restrições de de um Sudoku 4x4 no console
 ```
 
-E a satisfatibilidade é verificada a partir do algoritmo DPLL, implementado na classe *DPLL.swift*.
+E a satisfatibilidade é verificada a partir do algoritmo DPLL, implementado na classe **DPLL.swift**.
 
 **Inicialização do DPLL:**
 
@@ -38,6 +38,6 @@ No caso acima, o DPLL receberá a formula na CNF (1 ∨ 2) ∧ (-1 ∨ 3) com v(
 
 A equipe é formada por três alunos (atualmente) do Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Campus Maracanaú. Sendo eles:
 
-[Diego Brito]((http://lattes.cnpq.br/2238317369097882)
+[Diego Brito](http://lattes.cnpq.br/2238317369097882)
 [Diêgo Farias](http://lattes.cnpq.br/2171527148137210)
 [Nykolas Mayko](http://lattes.cnpq.br/7331320070132781)
