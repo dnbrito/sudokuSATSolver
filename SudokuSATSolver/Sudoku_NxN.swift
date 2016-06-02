@@ -183,7 +183,7 @@ class Sudoku_NxN {
     
     // MARK: - Variables
     
-    var restrictions: [[Int]] = []
+    var constraints: [[Int]] = []
     var level: Int = 0
     
     // MARK: - Init
@@ -204,7 +204,7 @@ class Sudoku_NxN {
                 for column in 1...level {
                     clause.append(value*100+line*10+column)
                 }
-                restrictions.append(clause)
+                constraints.append(clause)
             }
         }
         
@@ -216,7 +216,7 @@ class Sudoku_NxN {
                 for line in 1...level {
                     clause.append(value*100+line*10+column)
                 }
-                restrictions.append(clause)
+                constraints.append(clause)
             }
         }
         
@@ -226,7 +226,7 @@ class Sudoku_NxN {
             for line in 1...level {
                 for value in 1...level {
                     for otherValue in value..<level {
-                        restrictions.append([(value*100+line*10+column)*(-1), ((otherValue+1)*100+line*10+column)*(-1)])
+                        constraints.append([(value*100+line*10+column)*(-1), ((otherValue+1)*100+line*10+column)*(-1)])
                     }
                 }
             }
@@ -259,7 +259,7 @@ class Sudoku_NxN {
                         clause.append(value*100+line*10+column)
                     }
                 }
-                restrictions.append(clause)
+                constraints.append(clause)
             }
         }
 
@@ -274,8 +274,8 @@ class Sudoku_NxN {
      */
     func toString() {
         print("Restrições para o Sudoku \(level)x\(level)\n")
-        for index in 0..<restrictions.count {
-            print("\(index+1):\t\t\(restrictions[index])")
+        for index in 0..<constraints.count {
+            print("\(index+1):\t\t\(constraints[index])")
         }
     }
     

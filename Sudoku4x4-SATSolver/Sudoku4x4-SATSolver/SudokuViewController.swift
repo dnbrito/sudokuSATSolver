@@ -85,7 +85,7 @@ class SudokuViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         let sudoku = Sudoku_NxN(level: 4)
 
-        let dpll = DPLL(input: sudoku.restrictions, valorations: valorations)
+        let dpll = DPLL(input: sudoku.constraints, valorations: valorations)
         
         consoleLog.text = "\n* Sudoku \(sudoku.level)X\(sudoku.level) *\n"
 
