@@ -12,7 +12,7 @@ Aplicativo desenvolvido para o trabalho final da disciplina de "Lógica para Ci�
 
 O projeto foi desenvolvido na IDE Xcode 7.3.1 com a linguagem Swift 2.2 utilizando o framework UIKit para a interface de usuário. O aplicativo tem como objetivo exemplificar um Sudoku 4x4, porém a classe *SudokuNxN.swift* gera restrições para Sudokus NxN.
 
-** Inicialização: **
+**Inicialização:**
 
 ```swift
 let sudoku4x4 = Sudoku_NxN(level: 4)
@@ -24,7 +24,7 @@ sudoku9x9.toString()                  // Mostra as restrições de de um Sudoku 
 
 E a satisfatibilidade é verificada a partir do algoritmo DPLL, implementado na classe *DPLL.swift*.
 
-** Inicialização do DPLL: **
+**Inicialização do DPLL:**
 
 ```swift
 let dpll = DPLL(input: [[1,2],[-1,3]], valorations: [3])
@@ -32,7 +32,7 @@ let dpll = DPLL(input: [[1,2],[-1,3]], valorations: [3])
 
 No caso acima, o DPLL receberá a formula na CNF (1 ∨ 2) ∧ (-1 ∨ 3) com v(3) = T. Retornará alguma valoração que deixa a formula verdadeira, por exemplo Valorações = {3,1} ou Valorações = {3,2}. 
 
-** O código está comentado e auto-explicativo. **
+**O código está comentado e auto-explicativo.**
 
 ## Equipe
 
