@@ -98,6 +98,8 @@ class SudokuViewController: UIViewController, UICollectionViewDelegate, UICollec
         consoleLog.text = consoleLog.text + "Valorações Iniciais: \(valorations)\n"
         consoleLog.text = consoleLog.text + "Valorações Essenciais: \(dpll.eValorations)\n"
         
+        
+        
         dpll.eValorations.forEach { (val) in
             let textValue = val/100
             let lc = val-textValue*100

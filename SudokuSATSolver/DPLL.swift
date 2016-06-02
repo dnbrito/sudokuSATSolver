@@ -40,10 +40,10 @@ class DPLL {
 
     // MARK: - Variables
     
-    var input: [[Int]] = []
-    var inputLine: [[Int]] = []
-    var valorations: [Int] = []
-    var eValorations: [Int] = []
+    var input: [[Int]] = []         // Entrada
+    var inputLine: [[Int]] = []     // Entrada + Valorações iniciais
+    var valorations: [Int] = []     // Valorações
+    var eValorations: [Int] = []    // Valorações Essenciais
     
     var isSatisfiable: Bool = false
     
