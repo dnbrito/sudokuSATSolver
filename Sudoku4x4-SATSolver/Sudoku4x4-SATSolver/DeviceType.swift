@@ -1,9 +1,9 @@
 //
 //  DeviceType.swift
-//  iRacha
+//  Sudoku4x4-SATSolver
 //
-//  Created by Diego Brito on 12/05/16.
-//  Copyright © 2016 Glück App Factory. All rights reserved.
+//  Created by Diego Brito, Diêgo Farias e Nykolas Mayko on 29/05/16.
+//  Copyright © 2016 Diego Brito. All rights reserved.
 //
 
 import UIKit

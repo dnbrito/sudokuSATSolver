@@ -30,8 +30,8 @@
 		2539A1091CFE1523006C0DD1 /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		2539A10A1CFE1523006C0DD1 /* SubgridSudokuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubgridSudokuCollectionViewCell.swift; sourceTree = "<group>"; };
 		2539A10B1CFE1523006C0DD1 /* SudokuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudokuViewController.swift; sourceTree = "<group>"; };
-		2539A1111CFE1539006C0DD1 /* DPLL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DPLL.swift; path = ../../../SudokuSATSolver/DPLL.swift; sourceTree = "<group>"; };
-		2539A1121CFE1539006C0DD1 /* Sudoku_NxN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sudoku_NxN.swift; path = ../../../SudokuSATSolver/Sudoku_NxN.swift; sourceTree = "<group>"; };
+		2539A1111CFE1539006C0DD1 /* DPLL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DPLL.swift; path = ../SudokuSATSolver/DPLL.swift; sourceTree = "<group>"; };
+		2539A1121CFE1539006C0DD1 /* Sudoku_NxN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sudoku_NxN.swift; path = ../SudokuSATSolver/Sudoku_NxN.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +330,7 @@
 				2539A1051CFE14CE006C0DD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

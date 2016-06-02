@@ -1,8 +1,8 @@
 //
 //  DPLL.swift
-//  logic-final-work
+//  Sudoku4x4-SATSolver
 //
-//  Created by Diego Brito on 29/05/16.
+//  Created by Diego Brito, Diêgo Farias e Nykolas Mayko on 29/05/16.
 //  Copyright © 2016 Diego Brito. All rights reserved.
 //
 
@@ -142,7 +142,7 @@ class DPLL {
                 return true
             }
         }
-        
+
         return false
     }
     
@@ -199,7 +199,7 @@ class DPLL {
     func toString() {
         print("\nEntrada: \(input)")
         print("\nValorações: \(valorations)")
-        print("\nValorações > 0: ")
+        print("\nValorações Essenciais: \(eValorations)")
         
         valorations.forEach { (val) in
             if val > 0 && val <= 999 {
@@ -207,5 +207,5 @@ class DPLL {
             }
         }
     }
-        
+    
 }
