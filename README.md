@@ -16,10 +16,10 @@ O projeto foi desenvolvido na IDE Xcode 7.3.1 com a linguagem Swift 2.2 utilizan
 
 ```swift
 let sudoku4x4 = Sudoku_NxN(level: 4)
-sudoku4x4.toString()                  // Mostra as restrições de de um Sudoku 4x4 no console
+sudoku4x4.toString()                  // Mostra as restrições de um Sudoku 4x4 no console
 
 let sudoku9x9 = Sudoku_NxN(level: 9)
-sudoku9x9.toString()                  // Mostra as restrições de de um Sudoku 4x4 no console
+sudoku9x9.toString()                  // Mostra as restrições de um Sudoku 9x9 no console
 ```
 
 E a satisfatibilidade é verificada a partir do algoritmo DPLL, implementado na classe **DPLL.swift**.
@@ -30,7 +30,7 @@ E a satisfatibilidade é verificada a partir do algoritmo DPLL, implementado na 
 let dpll = DPLL(input: [[1,2],[-1,3]], valorations: [3])
 ```
 
-No caso acima, o DPLL receberá a formula na CNF (1 ∨ 2) ∧ (-1 ∨ 3) com v(3) = T. Retornará alguma valoração que deixa a formula verdadeira, por exemplo Valorações = {3,1} ou Valorações = {3,2}. 
+No caso acima, o DPLL receberá a formula na CNF (1 ∨ 2) ∧ (¬1 ∨ 3) com v(3) = T. Retornará alguma valoração que deixa a formula verdadeira, por exemplo: Seja v uma valoração, onde v(3) = T e v(1) = T, assim, o conjunto de valorações será {3,1}. 
 
 **O código está comentado e auto-explicativo.**
 
