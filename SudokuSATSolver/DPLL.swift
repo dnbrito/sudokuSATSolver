@@ -200,12 +200,6 @@ class DPLL {
         print("\nEntrada: \(input)")
         print("\nValorações: \(valorations)")
         print("\nValorações Essenciais: \(eValorations)")
-        
-        valorations.forEach { (val) in
-            if val > 0 && val <= 999 {
-                print(val)
-            }
-        }
     }
     
 }
