@@ -2,7 +2,7 @@
 //  SubgridSudokuCollectionViewCell.swift
 //  Sudoku4x4-SATSolver
 //
-//  Created by Diego Brito, Diêgo Farias e Nykolas Mayko on 29/05/16.
+//  Created by Diego Brito, Diêgo Farias and Nykolas Mayko on 29/05/16.
 //  Copyright © 2016 Diego Brito. All rights reserved.
 //
 
