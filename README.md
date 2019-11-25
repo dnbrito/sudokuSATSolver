@@ -6,7 +6,7 @@
 
 ## Motivação
 
-Aplicativo desenvolvido para o trabalho final da disciplina de "Lógica para Ciência da Computação" - Prof.: [Thiago Alves Rocha](http://thiagoalvesifce.tk/). O App tem o intuito de prover uma interface gráfica para um Sudoku 4x4 que recebe alguns números iniciais e ao precionar o botão **Verificar**, é verificada a satisfatibilidade (se há uma solução) a partir da configuração inicial e, caso haja, mostrar a solução ao usuário.
+Aplicativo desenvolvido para o trabalho final da disciplina de "Lógica para Ciência da Computação" - Prof.: [Thiago Alves Rocha](https://thiagoalvesifce.github.io/). O App tem o intuito de prover uma interface gráfica para um Sudoku 4x4 que recebe alguns números iniciais e ao precionar o botão **Verificar**, é verificada a satisfatibilidade (se há uma solução) a partir da configuração inicial e, caso haja, mostrar a solução ao usuário.
 
 ## Descrição
 
