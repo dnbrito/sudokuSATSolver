@@ -2,7 +2,7 @@
 
 **Demonstração do Funcinamento**
 
-![alt tag](http://i.imgur.com/wFqTCra.gif)
+![alt tag](https://raw.githubusercontent.com/dnbrito/Assets/master/sudokuSATSolver.gif)
 
 ## Motivação
 
